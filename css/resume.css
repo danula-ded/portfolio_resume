@@ -2,22 +2,38 @@
     color: #bd5d38;
 }
 
-.main-icon-color {
+#main-icon {
     background-color: #495057;
 }
 
-.telegram-color {
-    background-color: #497495 !important;
+#telegram {
+    background-color: #497495;
 }
 
-.github-color {
-    background-color: #010409 !important;
+#telegram:hover {
+    background-color: #497495d7;
 }
 
-.vk-color {
-    background-color: #0077ff !important;
+#github {
+    background-color: #010409;
 }
 
-.email-color {
-    background-color: #c14438 !important;
+#github:hover {
+    background-color: #010409d7;
+}
+
+#vk {
+    background-color: #0077ff;
+}
+
+#vk:hover {
+    background-color: #0077ffd7;
+}
+
+#email {
+    background-color: #c14438;
+}
+
+#email:hover {
+    background-color: #c14338d7;
 }
