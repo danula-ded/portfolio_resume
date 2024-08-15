@@ -8,6 +8,7 @@
   ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
   [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/danula-ded/portfolio_resume/blob/main/LICENSE)
+  ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-deployed-brightgreen)
 
 
   <h2><a href="https://danula-ded.github.io/portfolio_resume/" target="_blank" style="color:#4CAF50;text-decoration:none;">🌟 Посетите мой портфолио-сайт 🌟</a></h2>
