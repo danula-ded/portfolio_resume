@@ -11,7 +11,7 @@
   ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-deployed-brightgreen)
 
 
-  <h2><a href="https://danula-ded.github.io/portfolio_resume/" target="_blank" style="color:#4CAF50;text-decoration:none;">🌟 Посетите мой портфолио-сайт 🌟</a></h2>
+  <h2><a href="https://danula-ded.github.io/portfolio_resume/" target="_blank">🌟 Посетите мой портфолио-сайт 🌟</a></h2>
 </div>
 
 ## О проекте
