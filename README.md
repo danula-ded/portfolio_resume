@@ -41,3 +41,5 @@
 git clone https://github.com/danula-ded/portfolio_resume.git
 ```
 2. Откройте index.html в вашем браузере.
+
+### Проект еще находиться на доработке
