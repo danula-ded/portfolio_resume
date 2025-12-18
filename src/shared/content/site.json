@@ -1,0 +1,205 @@
+{
+  "name": "Даниил Ступишин",
+  "headline": "Frontend-разработчик",
+  "summary": "Frontend-разработчик (React/TypeScript, Next.js и Vue 3) с опытом коммерческой разработки. Делаю интерфейсы для продакшена: переиспользуемые компоненты, архитектура (FSD), интеграции с API, производительность и доступность. Пишу unit-тесты (Vitest/Jest) и понимаю основы CI/CD и Docker, чтобы быстрее доводить задачи до результата.",
+  "location": "Россия",
+  "roles": [
+    "React",
+    "TypeScript",
+    "Next.js",
+    "Vue 3",
+    "Vite",
+    "Tailwind",
+    "FSD",
+    "Vitest / Jest",
+    "CI/CD"
+  ],
+  "links": {
+    "github": "https://github.com/danula-ded",
+    "email": "mailto:i@dstupishin.ru",
+    "telegram": "https://t.me/ssilveri"
+  },
+  "achievements": [
+    {
+      "title": "РСХБ-Интех — «Частное Облако»",
+      "description": "Коммерческая разработка UI-модулей внутреннего портала: Vue 3 + TypeScript, Pinia, vue-router, оптимизации и unit-тесты (Vitest, Vue Test Utils).",
+      "date": "Фев 2025 — Авг 2025 (7 месяцев)",
+      "icon": "badge"
+    },
+    {
+      "title": "Победитель «Хакатон 3.0»",
+      "description": "Командная разработка и защита решения; диплом 1 степени.",
+      "date": "2025",
+      "icon": "trophy"
+    },
+    {
+      "title": "«JavaScript от Яндекса»",
+      "description": "Курс «JavaScript от Яндекса: с нуля до веб-разработчика» (144 ак. часа): практика на проектах и работа с современным фронтенд-стеком.",
+      "date": "2024",
+      "icon": "graduation"
+    },
+    {
+      "title": "«Тренировки по алгоритмам 4.0»",
+      "description": "Прошёл курс теоретической и практической подготовки, решил больше 50% задач.",
+      "date": "2023",
+      "icon": "sparkles"
+    }
+  ],
+  "skills": {
+    "core": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Vue 3",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Redux Toolkit",
+      "Pinia"
+    ],
+    "tooling": [
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Vite",
+      "Vitest",
+      "Jest",
+      "Git",
+      "GitHub Actions",
+      "FSD",
+      "Figma",
+      "Docker",
+      "CI/CD"
+    ],
+    "soft": [
+      "Командная работа",
+      "Коммуникация",
+      "Ответственность",
+      "Самостоятельность",
+      "Проактивность",
+      "Ориентация на качество"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Portfolio Resume",
+      "description": "Портфолио на Next.js с темизацией, Tailwind v4, shadcn/ui и архитектурой FSD.",
+      "tags": ["Next.js", "TypeScript", "Tailwind", "shadcn/ui"],
+      "href": "https://danula-ded.github.io/portfolio_resume/",
+      "repo": "https://github.com/danula-ded/portfolio_resume"
+    },
+    {
+      "title": "saasoft-test",
+      "description": "Тестовое задание на позицию Frontend Vue Developer: интерфейс на Vue + TypeScript.",
+      "tags": ["Vue", "TypeScript", "Vite"],
+      "href": "https://danula-ded.github.io/saasoft-test/",
+      "repo": "https://github.com/danula-ded/saasoft-test"
+    },
+    {
+      "title": "Mobile News",
+      "description": "Мобильное новостное приложение: React + TypeScript + Redux, стилизация на SCSS.",
+      "tags": ["React", "TypeScript", "Redux"],
+      "href": "https://danula-ded.github.io/Mobile_News/",
+      "repo": "https://github.com/danula-ded/Mobile_News"
+    },
+    {
+      "title": "Pindie Frontend",
+      "description": "Frontend платформы для инди-игр: React UI и обмен данными с backend через REST API.",
+      "tags": ["React", "JavaScript", "REST API"],
+      "repo": "https://github.com/danula-ded/pindie-frontend"
+    },
+    {
+      "title": "Playable Ads Collection",
+      "description": "Коллекция мини-игр (playable ads) с демо на GitHub Pages.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "href": "https://danula-ded.github.io/Playable-Ads-Collection/",
+      "repo": "https://github.com/danula-ded/Playable-Ads-Collection"
+    },
+    {
+      "title": "UAV Russia Stats",
+      "description": "Веб-сервис для анализа количества и длительности полётов гражданских БПЛА на основе данных Росавиации.",
+      "tags": ["TypeScript", "Web", "Analytics"],
+      "repo": "https://github.com/danula-ded/uav-russia-stats"
+    }
+  ],
+  "ui": {
+    "navigation": {
+      "items": [
+        { "href": "#about", "label": "Обо мне" },
+        { "href": "#achievements", "label": "Достижения" },
+        { "href": "#skills", "label": "Навыки" },
+        { "href": "#projects", "label": "Проекты" },
+        { "href": "#contact", "label": "Контакты" }
+      ],
+      "mobileMenuTitle": "Меню",
+      "githubLabel": "GitHub",
+      "openMenuAriaLabel": "Open menu",
+      "closeMenuAriaLabel": "Close menu"
+    },
+    "home": {
+      "hero": {
+        "projectsCtaLabel": "Посмотреть проекты",
+        "contactCtaLabel": "Связаться",
+        "githubLabel": "GitHub"
+      },
+      "about": {
+        "title": "Обо мне",
+        "description": "Коротко: чем занимаюсь и что важно в работе.",
+        "paragraphs": [
+          "Я frontend-разработчик. Основной стек — React + TypeScript (Next.js) и Vue 3. Есть коммерческий опыт: РСХБ-Интех (внутренний портал «Частное Облако»). Люблю понятную архитектуру (FSD), компонентный подход и интерфейсы, которыми приятно пользоваться.",
+          "В проектах делаю UI-модули и переиспользуемые компоненты, интегрируюсь с API, оптимизирую производительность и покрываю критичную логику unit-тестами (Vitest/Jest). Как дополнительный плюс — понимаю основы CI/CD и Docker, поэтому проще довожу фичи до результата."
+        ]
+      },
+      "focus": {
+        "title": "Фокус",
+        "description": "Ключевые принципы и то, что я привношу в проекты.",
+        "items": [
+          {
+            "title": "Качество UI",
+            "description": "Компонентный подход, единые стили/токены, аккуратная типографика."
+          },
+          {
+            "title": "Архитектура",
+            "description": "FSD и понятная структура проекта, которая масштабируется."
+          },
+          {
+            "title": "Производительность",
+            "description": "Быстрая загрузка, оптимизация сборки и UI, разумные компромиссы."
+          }
+        ]
+      },
+      "achievements": {
+        "title": "Достижения",
+        "description": "Награды, сертификаты, важные результаты — всё, чем можно гордиться."
+      },
+      "skills": {
+        "title": "Навыки",
+        "description": "Технологии, инструменты и рабочие привычки.",
+        "cards": {
+          "core": { "title": "Core", "description": "Основной стек." },
+          "tooling": {
+            "title": "Tooling",
+            "description": "Инструменты и подходы."
+          },
+          "soft": {
+            "title": "Soft",
+            "description": "Коммуникация и рабочие привычки."
+          }
+        }
+      },
+      "projects": {
+        "title": "Проекты",
+        "description": "Выбранные работы: репозитории, стеки и демо — по ссылкам. Больше проектов — на GitHub.",
+        "repoLabel": "Repo",
+        "demoLabel": "Demo"
+      },
+      "contact": {
+        "title": "Контакты",
+        "description": "Напиши мне — отвечу и обсудим задачи.",
+        "emailLabel": "Email",
+        "telegramLabel": "Telegram",
+        "footerNote": "Если удобнее — напиши в Telegram, отвечаю быстрее."
+      }
+    }
+  }
+}

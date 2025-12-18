@@ -1,0 +1,76 @@
+name: Sync achievements
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      HUSKY: 0
+      YANDEX_DISK_TOKEN: ${{ secrets.YANDEX_DISK_TOKEN }}
+      YANDEX_DISK_ACHIEVEMENTS_DIR: ${{ vars.YANDEX_DISK_ACHIEVEMENTS_DIR }}
+      YANDEX_DISK_ACHIEVEMENTS_JSON_PATH: ${{ vars.YANDEX_DISK_ACHIEVEMENTS_JSON_PATH }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync
+        run: npm run sync:achievements
+
+      - name: Commit changes
+        id: commit
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          disallowed_changes=$(git diff --cached --name-only | grep -vE '^(src/shared/content/site\.json|public/achievements/)' || true)
+          if [[ -n "$disallowed_changes" ]]; then
+            echo "Unexpected changes detected (aborting):"
+            echo "$disallowed_changes"
+            exit 1
+          fi
+
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git commit -m "chore: sync achievements"
+          git push origin HEAD:main
+
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Trigger deploy
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'deploy.yml',
+              ref: 'main',
+            })

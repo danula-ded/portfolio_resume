@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+build
+coverage
+package-lock.json
+__Портфолио__
+___Резюме__
